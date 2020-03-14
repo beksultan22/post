@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post</title>
+    <style>
+        .like{
+            width: 100px;
+            height: 100px;
+        }
+         body{
+            background: cornflowerblue;
+        }
+         div{
+             border-radius: 100px;
+             width: 500px;
+             box-shadow: 50px 2px 100px rgba(0,0,0,0.7);
+         }
+         .post{
+             border-radius: 100px;
+         }
+
+    </style>
+</head>
+<body>
+ <center>
+     <div>
+   <img src="unnamed.png" class="post"><br>
+   <img src="dontlike.png" id="like" class="like" onclick="name22()">
+     <p id="count">0</p>
+     <p id="name"> _NO Problem_,  CSS256,  Max2000_ и т.д.</p>
+     </div>
+     <script>
+         name1=0
+        function name22(){
+            if (name1 == 0){
+                name1 = 1
+                document.getElementById('like').src = "like.png"
+                document.getElementById('name').innerHTML = "_usupbekovv_, _NO Problem_,  CSS256,  Max2000_ и т.д."
+            }
+
+            else if (name1 == 1){
+                name1 = 0
+                document.getElementById('like').src = "dontlike.png"
+                document.getElementById('name').innerHTML = "_NO Problem_,  CSS256,  Max2000_ и т.д."
+            }
+            document.getElementById('count').innerHTML = name1
+        }
+     </script>
+ </center>
+</body>
+</html>
